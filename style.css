@@ -29,11 +29,10 @@ img[alt="dbIcon"],
     width: 60px;
 }
 
-
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 1fr 6fr;
     grid-template-areas: 
     "sideBar header"
     "sideBar content"
@@ -44,6 +43,8 @@ img[alt="dbIcon"],
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-right: 50px;
     padding-left: 50px;
     background-color: rgb(255, 255, 255);
@@ -131,6 +132,29 @@ ul li {
 }
 
 .content {
+    display: grid;
+    padding: 30px 50px;
     background-color: rgb(226, 226, 226);
     grid-area: content;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "contentLeft contentTopRight"
+    "contentLeft contentBotRight";
+}
+
+.contentLeft {
+    grid-area: contentLeft;
+}
+
+.contentTopRight {
+    grid-area: contentTopRight;
+}
+
+.contentBotRight {
+    grid-area: contentBotRight;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template: repeat(3, 250px) / repeat(2, 250px);
 }
