@@ -14,6 +14,25 @@
     "sideBar content"
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.topHeader,
+.bottomHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightTopHeader,
+.leftBotHeader,
+.leftTopHeader {
+    display: flex;
+}
+
 .sideBar{
     display: flex;
     flex-direction: column;
@@ -41,6 +60,7 @@ ul li {
 }
 
 .header {
+    display: flex;
     background-color: rgb(255, 255, 255);
     grid-area: header;
 }
