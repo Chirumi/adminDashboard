@@ -23,9 +23,10 @@ img {
     width: 40px;
 }
 
-img[alt="dbIcon"] {
-    height: 40px;
-    width: 50px;
+img[alt="dbIcon"],
+.leftBotHeader img  {
+    height: 50px;
+    width: 60px;
 }
 
 
@@ -45,13 +46,18 @@ img[alt="dbIcon"] {
     gap: 30px;
     padding-right: 50px;
     padding-left: 50px;
+    background-color: rgb(255, 255, 255);
+    grid-area: header;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0px 15px 10px -10px rgb(187, 187, 187);
 }
 
 input[type="search"] {
     background-color: rgb(226, 226, 226);
     border-style: none;
     border-radius: 152px;
-    width: 650px;
+    width: 700px;
     padding: 10px 20px;
 }
 
@@ -67,6 +73,11 @@ input[type="search"] {
     display: flex;
 }
 
+.leftTopHeader,
+.leftBotHeader {
+    gap: 20px;
+}
+
 .rightTopHeader div {
     font-size: 25px;
     font-weight: bolder;
@@ -75,6 +86,21 @@ input[type="search"] {
 .rightTopHeader {
     align-items: center;
     gap: 20px;
+}
+
+.rightBotHeader {
+    display: flex;
+    gap: 30px;
+}
+
+.rightBotHeader button {
+    font-size: 20px;
+    color: white;
+    border-style: none;
+    background-color: #0ea5e9;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .sideBar{
@@ -90,7 +116,8 @@ input[type="search"] {
     grid-area: sideBar;
 }
 
-.dashBoard {
+.dashBoard,
+.profName {
     font-size: 30px;
 }
 
@@ -101,12 +128,6 @@ input[type="search"] {
 
 ul li {
     margin-bottom: 20px;
-}
-
-.header {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    grid-area: header;
 }
 
 .content {
