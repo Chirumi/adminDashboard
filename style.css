@@ -143,6 +143,7 @@ ul li {
 }
 
 .contentLeft {
+    padding-right: 50px;
     grid-area: contentLeft;
 }
 
@@ -156,5 +157,13 @@ ul li {
 
 .gridContainer {
     display: grid;
-    grid-template: repeat(3, 250px) / repeat(2, 250px);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    height: 300px;
+    gap: 30px;
+}
+
+.gridContainer h4 {
+    background-color: white;
+    border-radius: 10px;
 }
