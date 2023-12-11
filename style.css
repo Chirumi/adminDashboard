@@ -18,20 +18,21 @@
     gap: 10px;
 }
 
+img {
+    height: 30px;
+    width: 40px;
+}
+
 img[alt="dbIcon"] {
     height: 40px;
     width: 50px;
 }
 
-li img {
-    height: 30px;
-    width: 40px;
-}
 
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 15vh 85vh;
+    grid-template-rows: 20vh 80vh;
     grid-template-areas: 
     "sideBar header"
     "sideBar content"
@@ -42,6 +43,8 @@ li img {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 input[type="search"] {
@@ -62,6 +65,16 @@ input[type="search"] {
 .leftBotHeader,
 .leftTopHeader {
     display: flex;
+}
+
+.rightTopHeader div {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.rightTopHeader {
+    align-items: center;
+    gap: 20px;
 }
 
 .sideBar{
