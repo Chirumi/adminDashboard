@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 15vh 85vh;
+    grid-template-areas: 
+    "sideBar header"
+    "sideBar content"
+}
+
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    padding-left: 30px;
+    color: white;
+    background-color: #0ea5e9;
+    grid-template-rows: 1fr 3fr 3fr ;
+    grid-area: sideBar;
+}
+
+.dashBoard {
+    padding-top: 25px;
+    font-size: 35px;
+}
+
+.sideBarOne,
+.sideBarTwo {
+    font-size: 22px;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    grid-area: header;
+}
+
+.content {
+    background-color: rgb(226, 226, 226);
+    grid-area: content;
+}
