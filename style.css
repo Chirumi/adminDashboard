@@ -165,10 +165,11 @@ ul li {
 .card {
     position: relative;
     background-color: white;
+    border-left: 10px solid orange;
     border-radius: 10px;
     height: 250px;
     padding-top: 30px;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 
 .details {
