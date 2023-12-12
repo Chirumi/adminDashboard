@@ -176,12 +176,46 @@ ul li {
     padding-left: 20px;
 }
 
-.details {
-    color: rgb(82, 82, 82);
-}
-
 .icons {
     position: absolute;
     bottom: 35px;
     right: 45px;
 }
+ 
+.announcementGroup { 
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.announcementMain1,
+.announcementMain2 {
+    border-bottom: 2px solid rgb(204, 204, 204);
+    padding-bottom: 35px;
+}
+
+.announcementMain1,
+.announcementMain2,
+.announcementMain3 {
+    padding-top: 30px;
+}
+
+.announcementMain3 {
+    padding-bottom: 50px;
+}
+
+.announcementDetails,
+.details {
+    font-size: 15px;
+    color: rgb(82, 82, 82);
+}
+
+.announcementGroup h4 {
+    margin-bottom: 5px;
+}
+
+.announcementTitle {
+    margin-bottom: 20px;
+}
+
