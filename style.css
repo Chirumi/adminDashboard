@@ -163,6 +163,7 @@ ul li {
 }
 
 .card {
+    position: relative;
     background-color: white;
     border-radius: 10px;
     height: 250px;
@@ -172,4 +173,10 @@ ul li {
 
 .details {
     color: rgb(82, 82, 82);
+}
+
+.icons {
+    position: absolute;
+    bottom: 35px;
+    right: 45px;
 }
