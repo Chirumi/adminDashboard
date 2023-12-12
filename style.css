@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    position: relative;
+}
+
 .sideBarTitle {
     display: flex;
     gap: 5px;
@@ -29,6 +33,18 @@ img[alt="dbIcon"],
     width: 60px;
 }
 
+.sideBar img {
+    filter: invert(1);
+}
+
+.chatBot {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    right: 35px;
+    bottom: 35px;
+    transform: scaleX(-1);
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
