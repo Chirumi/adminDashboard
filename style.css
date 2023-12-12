@@ -162,6 +162,10 @@ ul li {
     gap: 50px;
 }
 
+.contentLeft h2 {
+    margin-bottom: 20px;
+}
+
 .card {
     position: relative;
     background-color: white;
