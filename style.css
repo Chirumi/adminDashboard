@@ -158,12 +158,18 @@ ul li {
 .gridContainer {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    height: 300px;
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
 }
 
-.gridContainer h4 {
+.card {
     background-color: white;
     border-radius: 10px;
+    height: 250px;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.details {
+    color: rgb(82, 82, 82);
 }
