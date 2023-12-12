@@ -54,6 +54,12 @@ img[alt="dbIcon"],
     box-shadow: 0px 15px 10px -10px rgb(187, 187, 187);
 }
 
+.card,
+.announcementGroup,
+.trend {
+    box-shadow: 13px 13px 10px -10px rgb(187, 187, 187);
+}
+
 input[type="search"] {
     background-color: rgb(226, 226, 226);
     border-style: none;
@@ -159,7 +165,7 @@ ul li {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 50px;
+    gap: 35px;
 }
 
 .contentLeft h2 {
@@ -182,7 +188,8 @@ ul li {
     right: 45px;
 }
  
-.announcementGroup { 
+.announcementGroup,
+.trend { 
     border-radius: 10px;
     background-color: white;
     padding-left: 30px;
@@ -197,25 +204,42 @@ ul li {
 
 .announcementMain1,
 .announcementMain2,
-.announcementMain3 {
+.announcementMain3,
+.trend {
     padding-top: 30px;
 }
 
-.announcementMain3 {
+.announcementMain3,
+.trend {
     padding-bottom: 50px;
 }
 
 .announcementDetails,
+.trendingDetails,
 .details {
     font-size: 15px;
     color: rgb(82, 82, 82);
 }
 
-.announcementGroup h4 {
-    margin-bottom: 5px;
+.announcementGroup h4,
+.accName {
+    margin-bottom: 2px;
 }
 
-.announcementTitle {
+.announcementTitle,
+.trendingTitle {
     margin-bottom: 20px;
 }
+
+.trendingAcc {
+    display: flex;
+    gap: 10px;
+}
+
+.trend {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 
